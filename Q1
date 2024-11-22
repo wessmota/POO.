@@ -1,0 +1,11 @@
+def gerar_tabela_multiplicacao():
+
+    for i in range(5, 16):
+        print(f"Tabela de multiplicação do {i}:")
+
+        for j in range(1, 11):
+            print(f"{i} x {j} = {i * j}")
+
+        print()
+
+gerar_tabela_multiplicacao()
