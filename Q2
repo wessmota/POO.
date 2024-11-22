@@ -1,0 +1,11 @@
+def contar_digitos_cpf(cpf):
+
+    cpf = cpf.replace(".", "").replace("-", "")
+
+    if cpf.isdigit() and len(cpf) == 11:
+        print(f"O CPF informado possui {len(cpf)} dígitos.")
+    else:
+        print("CPF inválido. O número de dígitos deve ser 11.")
+
+cpf_informado = input("Digite o número do CPF (com ou sem pontos e hífen): ")
+contar_digitos_cpf(cpf_informado)
